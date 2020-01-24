@@ -40,8 +40,8 @@ Rails.application.configure do
   address:              'smtp.gmail.com',
   port:                  587,
   domain:               'gmail.com',
-  user_name:            'skytree.skysky@gmail.com',
-  password:             'tejmuejofuogytcl',
+  user_name:            ''
+  password:             ''
   authentication:       'plain',
   enable_starttls_auto:  true
   }
