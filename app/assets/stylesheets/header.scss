@@ -1,0 +1,28 @@
+a{
+  text-decoration: none;
+}
+
+.header{
+  height: 80px;
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  &__right--btn{
+    height:100%;
+    display:flex;
+    margin:25px 100px 0 0;
+    a{
+      margin-left:40px;
+    }
+  }
+  &__title{
+    font-size: 30px;
+    line-height: 60px;
+  &--text{
+    text-decoration: none;
+    color:white;
+    margin-left:15px;
+    }
+  }
+}
