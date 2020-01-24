@@ -46,10 +46,32 @@
   width: 1020px;
   margin:0 auto;
   padding: 130px 0;
-  background-color:greenyellow;
+  // background-color:greenyellow;
   &--title{
   font-size: 24px;
   text-align: center;
   margin-bottom: 40px;
   }
 }
+.card__list{
+  display: flex;
+  justify-content: space-between;
+  &--item{
+  width: 320px;
+  border:1px solid #152a5c;
+  }
+  &--img{
+  position: relative;
+    h3{
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-size: 20px;
+    }
+  } 
+}
+
+.card__text{
+padding: 15px 25px;
+}
+
