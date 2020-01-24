@@ -10,23 +10,23 @@
 
 .card__section
   .card__section--title
-    スクール紹介
+    スクール別口コミ
   %ul.card__list
     %li.card__list--item
       .card__list--img
-      = image_tag 'techexpert.png', alt: 'スクール画像1', width: '320px'
+        =link_to image_tag('techexpert.png', alt: 'スクール画像1', width: '320px', class: "card__image"),root_path
       %h3 株式会社div
       .card__list--text
         TECH::EXPERT
     %li.card__list--item
       .card__list--img
-      = image_tag 'codecamp.png', alt: 'スクール画像2', width: '320px'
+        =link_to image_tag('codecamp.png', alt: 'スクール画像2', width: '320px', class: "card__image"),root_path
       %h3 コードキャンプ株式会社
       .card__list--text
         CodeCamp
     %li.card__list--item
       .card__list--img
-      = image_tag 'DMM.png', alt: 'スクール画像3', width: '320px'
+        =link_to image_tag('DMM.png', alt: 'スクール画像3', width: '320px', class: "card__image"), root_path
       %h3 株式会社インフラトップ / Infratop Inc.
       .card__list--text
         DMM WEBCAMP
@@ -34,19 +34,19 @@
   %ul.card__list
     %li.card__list--item
       .card__list--img
-      = image_tag 'techacademy.png', alt: 'スクール画像4', width: '320px'
+        =link_to image_tag('techacademy.png', alt: 'スクール画像4', width: '320px', class: "card__image"),root_path
       %h3 キラメックス株式会社
       .card__list--text
         TECH ACADEMY
     %li.card__list--item
       .card__list--img
-      = image_tag 'GEEKJOB.png', alt: 'スクール画像5', width: '320px'
+        =link_to image_tag('GEEKJOB.png', alt: 'スクール画像5', width: '320px', class: "card__image"),root_path
       %h3 グルーヴ・ギア株式会社 GROOVE GEAR, Inc.
       .card__list--text
         GEEK JOB
     %li.card__list--item
       .card__list--img
-      = image_tag 'samurai.png', alt: 'スクール画像6', width: '320px'
+        =link_to image_tag('samurai.png', alt: 'スクール画像6', width: '320px', class: "card__image"),root_path
       %h3 株式会社侍
       .card__list--text
         Samurai

@@ -46,7 +46,6 @@
   width: 1020px;
   margin:0 auto;
   padding: 130px 0;
-  // background-color:greenyellow;
   &--title{
   font-size: 24px;
   text-align: center;
@@ -65,12 +64,16 @@
   }
   &--img{
   position: relative;
-    h3{
-      position: absolute;
-      bottom: 15px;
-      left: 25px;
-      font-size: 20px;
-      }
+  h3{
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-size: 20px;
+  }
   } 
+}
+
+.card__image{
+  border-bottom:1px solid;
 }
 
