@@ -31,7 +31,7 @@ class InquiryController < ApplicationController
   ##### Strong Parametersで問い合わせ画面からの入力を許可するリクエストパラメータを指定する
   def inquiry_params
     params.require(:inquiry).permit(
-      :name, :message
+      :name, :message, :email
     )
   end
 end
