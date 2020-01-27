@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   root to: "tops#index"
 
   get 'inquiry' => 'inquiry#index' 
@@ -8,4 +9,6 @@ Rails.application.routes.draw do
   post 'inquiry/confirm' => 'inquiry#confirm'
   ##### 問い合わせ完了画面
   post 'inquiry/thanks' => 'inquiry#thanks'
+
+  resources :posts, only: [:index, :new, :create]
 end
