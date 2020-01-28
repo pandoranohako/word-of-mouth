@@ -1,6 +1,8 @@
 class SchoolController < ApplicationController
-#   def show
-#     @school = School.find(school.id)
-#   end
+  def show
+    @school = School.find(params[:id])
+  end
 
-# end
+
+
+end
