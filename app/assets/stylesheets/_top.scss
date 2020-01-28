@@ -53,8 +53,9 @@
   }
 }
 .card__list{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 20px;
   &--item{
   width: 320px;
   border:1px solid #152a5c;
