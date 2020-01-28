@@ -1,3 +1,4 @@
+=render 'layouts/header'
 .new-post-main
   .new-post-main__center
     .new-post-main__center__head
@@ -62,4 +63,5 @@
       .new-product-main__center__bottom
       = f.submit "投稿する", class: 'new-post-main__center__bottom__submit-btn'
       = f.button "もどる", onclick: "history.back()", class: 'new-post-main__center__bottom__back-btn'
+=render 'layouts/footer'
     
