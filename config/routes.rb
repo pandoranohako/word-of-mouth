@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   ##### 問い合わせ完了画面
   post 'inquiry/thanks' => 'inquiry#thanks'
 
-  resources :posts, only: [:index, :new, :create]
+  resources :school, only: [:show]  do
+
+  resources :posts, only: [:index, :new, :create]  
+    
+  end
 end
