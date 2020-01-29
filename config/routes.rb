@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   post 'inquiry/thanks' => 'inquiry#thanks'
 
 
-  resources :school , only: :index do
+  resources :school do
     resources :posts, only: [:index, :new, :create]
 
   end

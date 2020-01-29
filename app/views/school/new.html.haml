@@ -2,13 +2,10 @@
   .new-post-main__center
     .new-post-main__center__head
       Pick up 受講生のクチコミ
-    = form_with model: @post, url: school_index_path,local: true do |f|
+    = form_with model:@post, url: school_index_path, local: true do |f|
       .new-post-main__center__post
-        .new-post-main__center__post--flex
-          入校した学校を選択してください。
-          .new-post-main__center__post--flex__necessary
-            必須
-          = f.collection_select :school_id, School.all, :id, :school_name, {prompt: "---"}, class: 'new-post-main__center__post__select'
+      = f.label :school_id      
+      = f.collection_select(:school_id, School.all, :id, :school_name, {prompt:"---"}, class: "new-post-main__center__details--flex__right__select")
       .new-post-main__center__post
         .new-post-main__center__post--flex
           .new-post-main__center__post--flex__title
