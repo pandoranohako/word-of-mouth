@@ -1,9 +1,11 @@
-=render 'layouts/header'
 .new-post-main
   .new-post-main__center
     .new-post-main__center__head
       Pick up 受講生のクチコミ
-    = form_for @post do |f|
+    = form_with model:@post, url: school_index_path, local: true do |f|
+      .new-post-main__center__post
+      = f.label :school_id      
+      = f.collection_select(:school_id, School.all, :id, :school_name, {prompt:"---"}, class: "new-post-main__center__details--flex__right__select")
       .new-post-main__center__post
         .new-post-main__center__post--flex
           .new-post-main__center__post--flex__title
@@ -63,5 +65,4 @@
       .new-product-main__center__bottom
       = f.submit "投稿する", class: 'new-post-main__center__bottom__submit-btn'
       = f.button "もどる", onclick: "history.back()", class: 'new-post-main__center__bottom__back-btn'
-=render 'layouts/footer'
     
