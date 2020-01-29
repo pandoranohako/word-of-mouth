@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2020_01_28_054223) do
-
+ActiveRecord::Schema.define(version: 2020_01_28_102658) do
 
   create_table "inquiries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -43,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_01_28_054223) do
     t.string "school_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image"
   end
 
 end
