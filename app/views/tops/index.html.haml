@@ -15,8 +15,8 @@
     - @school.each do |school|
       .card__list--item
         .card__list--img
-          =link_to image_tag(school.image.url, alt: 'スクール画像', width: '320px', height: '175px', class: "card__image"), school_path(school.id)
-        %h3 株式会社div
+          =link_to image_tag(school.image.url, alt: 'スクール画像', width: '320px', height: '175px', class: "card__image"), school_posts_path(school.id)
+          = school.company
         .card__list--text
           = school.school_name
 
