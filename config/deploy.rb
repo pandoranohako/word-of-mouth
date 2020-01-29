@@ -4,6 +4,7 @@ lock '3.11.2'
 
 # Capistranoのログの表示に利用する
 set :application, 'word-of-mouth'
+# set :linked_files, %w{config/master.key}
 
 # どのリポジトリからアプリをpullするかを指定する
 set :repo_url,  'git@github.com:pandoranohako/word-of-mouth.git'

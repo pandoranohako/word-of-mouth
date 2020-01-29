@@ -1,6 +1,5 @@
 class SchoolController < ApplicationController
-  # before_action :set_schools, only: [:new, :create]
-
+ 
   def new
     @school = School.find(params[:id])
   end
@@ -20,9 +19,6 @@ class SchoolController < ApplicationController
 
   private
 
-  # def set_schools
-  #   @schools = School.all
-  # end
 
   def post_params
     params.require(:post).permit(
@@ -30,8 +26,4 @@ class SchoolController < ApplicationController
       )
 
   end
-
-
-
-
 end
