@@ -1,0 +1,68 @@
+.new-post-main
+  .new-post-main__center
+    .new-post-main__center__head
+      Pick up 受講生のクチコミ
+    = form_with model:@post, url: school_index_path, local: true do |f|
+      .new-post-main__center__post
+      = f.label :school_id      
+      = f.collection_select(:school_id, School.all, :id, :school_name, {prompt:"---"}, class: "new-post-main__center__details--flex__right__select")
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            入校した理由
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :admission, class: 'new-post-main__center__post__text-area', placeholder: "入校した理由を明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            メリット
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :merit, class: 'new-post-main__center__post__text-area', placeholder: "入校して感じたメリットを明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            デメリット
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :demerit, class: 'new-post-main__center__post__text-area', placeholder: "入校して感じたデメリットを明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            入校した後のギャップ
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :gap, class: 'new-post-main__center__post__text-area', placeholder: "入校した後感じたギャップを明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            金額
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :cost, class: 'new-post-main__center__post__text-area', placeholder: "金額に見合っていたかについて明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            カリキュラム
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :curriculum_quality, class: 'new-post-main__center__post__text-area', placeholder: "カリキュラムの内容について明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            カリキュラム外の時間
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :out_of_learning, class: 'new-post-main__center__post__text-area', placeholder: "カリキュラム以外での時間の使い方について明記してください。"
+      .new-post-main__center__post
+        .new-post-main__center__post--flex
+          .new-post-main__center__post--flex__title
+            就職活動
+          .new-post-main__center__post--flex__necessary
+            必須
+        = f.text_area :employment, class: 'new-post-main__center__post__text-area', placeholder: "就職内容について明記してください。"
+      .new-product-main__center__bottom
+      = f.submit "投稿する", class: 'new-post-main__center__bottom__submit-btn'
+      = f.button "もどる", onclick: "history.back()", class: 'new-post-main__center__bottom__back-btn'
+    
