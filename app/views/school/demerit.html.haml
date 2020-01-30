@@ -1,0 +1,8 @@
+- @post.each do |post|
+  -if @school.id == post.school_id
+    .post-contents__main
+      .post-contents__main--form
+        .post-contents__main--header
+          デメリット
+        .post-contents__main--contents
+          = post.demerit

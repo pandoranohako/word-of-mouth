@@ -7,32 +7,62 @@
   .post-contents__question
     %ul.post-contents__question--contents
       %li.post-contents__question--list
-        =link_to "入校した理由"
+        =link_to "入校した理由",admission_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "メリット"
+        =link_to "メリット",merit_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "デメリット"
+        =link_to "デメリット",demerit_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "入校した後のギャップ"
+        =link_to "入校した後のギャップ", gap_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "金額"
+        =link_to "金額",cost_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "カリキュラムについて"
+        =link_to "カリキュラムについて",curriculum_quality_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "カリキュラム外の時間"
+        =link_to "カリキュラム外の時間",out_of_learning_school_path(@school.id)
       %li.post-contents__question--list
-        =link_to "就職活動"
-  .post-contents__main
-
-
-    -# - @post.each do |post|
-    -#   -if @school.id == post.school_id
-    -#     = post.admission
-    -#     = post.merit
-    -#     = post.demerit
-    -#     = post.cost
-    -#     = post.gap
-    -#     = post.curriculum_quality
-    -#     = post.out_of_learning
-    -#     = post.employment
+        =link_to "就職活動",employment_school_path(@school.id)
+  -# .post-contents__main
+  -#   - @post.first(6).each do |post|
+  -#     -if @school.id == post.school_id
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           入校した理由
+  -#         .post-contents__main--contents
+  -#           = post.admission
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           メリット    
+  -#         .post-contents__main--contents
+  -#           = post.merit
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           デメリット    
+  -#         .post-contents__main--contents
+  -#           = post.demerit
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           金額
+  -#         .post-contents__main--contents
+  -#           = post.cost
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           ギャップ  
+  -#         .post-contents__main--contents
+  -#           = post.gap
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           カリキュラム  
+  -#         .post-contents__main--contents
+  -#           = post.curriculum_quality
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           学習外
+  -#         .post-contents__main--contents
+  -#           = post.out_of_learning
+  -#       .post-contents__main--form
+  -#         .post-contents__main--header
+  -#           就職 
+  -#         .post-contents__main--contents
+  -#           = post.employment
 
