@@ -1,13 +1,38 @@
 .post-contents
   .post-contents__header
     .post-contents__header--title
-      = @school.school_name
-      = @admission
-      = @merit 
-      = @demerit
-      = @cost
-      = @gap
-      = @curriculum_qualit 
-      = @out_of_learning
-      = @employment
+      =@school.company
+    .post-contents__header--image
+      =image_tag @school.image.url, width: "300px"
+  .post-contents__question
+    %ul.post-contents__question--contents
+      %li.post-contents__question--list
+        =link_to "入校した理由"
+      %li.post-contents__question--list
+        =link_to "メリット"
+      %li.post-contents__question--list
+        =link_to "デメリット"
+      %li.post-contents__question--list
+        =link_to "入校した後のギャップ"
+      %li.post-contents__question--list
+        =link_to "金額"
+      %li.post-contents__question--list
+        =link_to "カリキュラムについて"
+      %li.post-contents__question--list
+        =link_to "カリキュラム外の時間"
+      %li.post-contents__question--list
+        =link_to "就職活動"
+  .post-contents__main
+
+
+    -# - @post.each do |post|
+    -#   -if @school.id == post.school_id
+    -#     = post.admission
+    -#     = post.merit
+    -#     = post.demerit
+    -#     = post.cost
+    -#     = post.gap
+    -#     = post.curriculum_quality
+    -#     = post.out_of_learning
+    -#     = post.employment
 
