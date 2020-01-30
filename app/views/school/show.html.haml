@@ -7,9 +7,9 @@
   .post-contents__question
     %ul.post-contents__question--contents
       %li.post-contents__question--list
-        =link_to "入校した理由"
+        =link_to "入校した理由",  school_admission_path(@school.id)
       %li.post-contents__question--list
-        =link_to "メリット"
+        =link_to "メリット", '/school/:school_id/merit'
       %li.post-contents__question--list
         =link_to "デメリット"
       %li.post-contents__question--list

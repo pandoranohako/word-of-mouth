@@ -16,16 +16,19 @@ class SchoolController < ApplicationController
   def show
     @school = School.find(params[:id])
     @post = Post.all
-    # @post = Post.where(@schoolid)
-    # @admission = @post.admission
-    # @merit = @post.merit
-    # @demerit = @post.demerit
-    # @cost = @post.cost
-    # @gap = @post.gap
-    # @curriculum_qualit = @post.curriculum_quality
-    # @out_of_learning = @post.out_of_learning
-    # @employment = @post.employment
+
   end
+
+  def admission
+    @school = School.find(params[:id])
+    @post = Post.all
+  end
+
+  def merit
+    @post = Post.all
+  end
+
+
 
   private
 
@@ -35,4 +38,5 @@ class SchoolController < ApplicationController
       :admission, :merit, :demerit, :cost, :gap, :curriculum_quality, :out_of_learning,  :employment,  :school_id)
 
   end
+
 end

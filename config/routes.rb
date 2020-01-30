@@ -12,6 +12,10 @@ Rails.application.routes.draw do
 
 
   resources :school do
+    member do
+    get 'admission', to: 'school#admission'
+    get 'merit', to: 'school#merit'
     resources :posts, only: [:index, :new, :create]
+    end
   end
 end
