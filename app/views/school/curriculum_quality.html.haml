@@ -6,5 +6,9 @@
       .post-contents__main--form
         .post-contents__main--header
           カリキュラム
+          .post-contents__main--header-age
+            = "年齢:#{post.user.age}"
+            = "性別:#{post.user.gender}"
+            = "職業:#{post.user.carrier}"
         .post-contents__main--contents
           = post.curriculum_quality

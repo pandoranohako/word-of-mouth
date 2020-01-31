@@ -46,7 +46,7 @@ class SchoolController < ApplicationController
 
   def post_params
     params.require(:post).permit(
-      :admission, :merit, :demerit, :cost, :gap, :curriculum_quality, :out_of_learning,  :employment,  :school_id)
+      :admission, :merit, :demerit, :cost, :gap, :curriculum_quality, :out_of_learning,  :employment,  :school_id).merge(user_id: current_user.id)
   end
 
   def set_topics

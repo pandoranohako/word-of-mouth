@@ -4,7 +4,7 @@
   .header__right
     .header__right--btn
       - if user_signed_in?
-        = link_to "新規投稿", new_user_registration_path, class:"header__text"
+        = link_to "新規投稿", new_post_path, class:"header__text"
         = link_to "ログアウト", destroy_user_session_path, method: :delete, class:"header__text"
       - else
         = link_to "ユーザー新規登録（無料）", new_user_registration_path, class:"header__text"
