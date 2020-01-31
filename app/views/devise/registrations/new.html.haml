@@ -1,10 +1,9 @@
 .new-user-main__box
   .new-user-main__box__title
-    無料ユーザー登録（１分）
+    無料ユーザー登録
   .new-user-main__box__contents
     = render "devise/shared/error_messages", resource: @user
     .new-user-main__box__contents__title
-      基本情報
     = form_with(model: @user,url: user_registration_path, method: :post, local: true) do |f|
       %table
         %tr.field
