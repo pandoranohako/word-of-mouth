@@ -58,7 +58,7 @@
   gap: 20px 20px;
   &--item{
   width: 320px;
-  border:1px solid #152a5c;
+  border:1px solid #ccc;
   }
   &--text{
     padding: 15px 25px;
@@ -75,6 +75,6 @@
 }
 
 .card__image{
-  border-bottom:1px solid;
+  border-bottom:1px solid #ccc;
 }
 
