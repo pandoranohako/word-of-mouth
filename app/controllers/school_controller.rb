@@ -15,6 +15,8 @@ class SchoolController < ApplicationController
   end
 
   def show
+    @post = Post.all
+    @school = School.find(params[:id])
   end
 
   def admission
