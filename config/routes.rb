@@ -20,9 +20,7 @@ Rails.application.routes.draw do
       get 'gap',                to:'school#gap'
       get 'curriculum_quality', to:'school#curriculum_quality'
       get 'out_of_learning',    to: 'school#out_of_learning'
-      get 'employment',         to:'employment'
-    
-    
+      get 'employment',         to:'employment'   
       resources :posts, only: [:index, :new, :create]
     end
   end
