@@ -1,14 +1,7 @@
-.new-user-main {
-  min-height: 100%;
-}
 .new-user-main__box {
   width: 1000px;
   margin: 10px auto 0;
   padding: 0 0 190px;
-}
-.new-user-main__box__body {
-  float: none;
-  width: 1000px;
 }
 .new-user-main__box__title {
   font-size: 20px;
@@ -26,6 +19,42 @@
   font-weight: bold;
 }
 .field {
+  border-collapse: collapse;
+  border:1px solid #d6dfe5;
+  height: 57px;
 
 }
-
+.age {
+  width: 30px;
+}
+#user_prefecture {
+  font-size: 14px;
+  padding: 4px 20px 4px 10px;
+  height: 23px;
+}
+.right {
+  border-right: 1px solid #d6dfe5;
+}
+table {
+  width: 1000px;
+}
+td {
+  padding: 20px 30px;
+}
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+.next-btn {
+width: 300px;
+height: 50px;
+background-color: #1b7fbe;
+color: white;
+margin-left: 350px;
+margin-top: 25px;
+border-radius: 4px;
+cursor: pointer;
+}
+.next-btn:hover {
+  background-color: pink;
+}
