@@ -1,4 +1,5 @@
 class SchoolController < ApplicationController
+  before_action :set_topics, except: [:new,:create]
  
   def new
     @school = School.find(params[:id])
@@ -14,17 +15,30 @@ class SchoolController < ApplicationController
   end
 
   def show
-    @school = School.find(params[:id])
-    @post = Post.all
-    # @post = Post.where(@schoolid)
-    # @admission = @post.admission
-    # @merit = @post.merit
-    # @demerit = @post.demerit
-    # @cost = @post.cost
-    # @gap = @post.gap
-    # @curriculum_qualit = @post.curriculum_quality
-    # @out_of_learning = @post.out_of_learning
-    # @employment = @post.employment
+  end
+
+  def admission
+  end
+
+  def merit
+  end
+
+  def demerit
+  end
+
+  def cost
+  end
+
+  def gap
+  end
+
+  def curriculum_quality
+  end
+
+  def out_of_learning
+  end
+
+  def employment
   end
 
   private
@@ -33,6 +47,10 @@ class SchoolController < ApplicationController
   def post_params
     params.require(:post).permit(
       :admission, :merit, :demerit, :cost, :gap, :curriculum_quality, :out_of_learning,  :employment,  :school_id)
+  end
 
+  def set_topics
+    @school = School.find(params[:id])
+    @post = Post.all
   end
 end
