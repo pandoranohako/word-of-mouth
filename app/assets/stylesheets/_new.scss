@@ -20,9 +20,14 @@
     &__post{
       padding: 40px;
       border-top: 1px solid #eee;
+      &__select{
+        width: 290px;
+        height: 48px;
+      }
       &--flex {
         display: flex;
         justify-content: flex-start;
+    
         &__title {
           font-size: 14px;
           font-weight: bold;
@@ -34,6 +39,7 @@
           color: white;
           font-size: 12px;
         }
+
       }
 
       &__text-area {

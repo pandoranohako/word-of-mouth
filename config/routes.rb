@@ -13,7 +13,16 @@ Rails.application.routes.draw do
 
 
   resources :school do
-    resources :posts, only: [:index, :new, :create]
-
+    member do
+      get 'admission',          to: 'school#admission'
+      get 'merit',              to: 'school#merit'
+      get 'demerit',            to: 'school#demerit'
+      get 'cost',               to:'school#cost'
+      get 'gap',                to:'school#gap'
+      get 'curriculum_quality', to:'school#curriculum_quality'
+      get 'out_of_learning',    to: 'school#out_of_learning'
+      get 'employment',         to:'employment'   
+      resources :posts, only: [:index, :new, :create]
+    end
   end
 end

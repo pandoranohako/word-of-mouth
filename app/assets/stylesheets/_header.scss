@@ -1,13 +1,13 @@
 a{
   text-decoration: none;
 }
-
 .header{
   height: 80px;
   width: 100%;
   background-color:black;
   display: flex;
   justify-content: space-between;
+  position: fixed;
   &__right--btn{
     height:100%;
     display:flex;
