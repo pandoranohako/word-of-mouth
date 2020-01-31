@@ -1,0 +1,12 @@
+- if user_signed_in?
+  = link_to new_post_path(@school.id), class: 'display-link' do
+    .display-link__text
+      投稿
+      %link_toi.fa.fa-pen
+- else
+  = link_to new_user_registration_path, class: 'display-link' do
+    .display-link__text
+      投稿
+      %link_toi.fa.fa-pen
+
+ 
