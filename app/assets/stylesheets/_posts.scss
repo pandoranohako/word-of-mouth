@@ -29,7 +29,7 @@
     }
   }
   &__main{
-    width: 690px;
+    width: 800px;
     height: 300px;
     margin:50px auto;
     &--form{
@@ -44,6 +44,8 @@
     border-bottom:1px solid #ccc;
     width:80%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     }
     &--contents{
       width: 100%;

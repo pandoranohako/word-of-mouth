@@ -1,10 +1,14 @@
-=render 'selectbox'
-
+=render 'shared/selectbox'
+=render 'shared/display_btn'
 - @post.each do |post|
   -if @school.id == post.school_id
     .post-contents__main
       .post-contents__main--form
         .post-contents__main--header
           金額
+          .post-contents__main--header-age
+            = "年齢:#{post.user.age}"
+            = "性別:#{post.user.gender}"
+            = "職業:#{post.user.carrier}"
         .post-contents__main--contents
           = post.cost
