@@ -1,4 +1,4 @@
-School.create!(school_name: 'TECH::EXPERT',
+School.create(school_name: 'TECH::EXPERT',
               image:File.open("#{Rails.root}/app/assets/images/techlogo.svg"),
               company: '株式会社 div')
 School.create(school_name: 'CodeCamp',
