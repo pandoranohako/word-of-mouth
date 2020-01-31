@@ -1,0 +1,31 @@
+.new-user-main {
+  min-height: 100%;
+}
+.new-user-main__box {
+  width: 1000px;
+  margin: 10px auto 0;
+  padding: 0 0 190px;
+}
+.new-user-main__box__body {
+  float: none;
+  width: 1000px;
+}
+.new-user-main__box__title {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 50px;
+}
+.new-user-main__box__contents {
+  overflow: hidden;
+  margin-top: 50px;
+  display: table-row;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.new-user-main__box__contents__title {
+  font-weight: bold;
+}
+.field {
+
+}
+

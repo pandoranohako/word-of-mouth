@@ -1,0 +1,75 @@
+= render  "layouts/header"
+.new-user-main
+  .new-user-main__header
+
+  .new-user-main__box
+    .new-user-main__box__body
+      .new-user-main__box__title
+        無料ユーザー登録（１分）
+      .new-user-main__box__contents
+        .new-user-main__box__contents__title
+          基本情報
+        = form_with(model: @user,url: user_registration_path, method: :post, local: true) do |f|
+          = render "devise/shared/error_messages", resource: @user
+          %table
+            %tr.field
+              %td= f.label :メールアドレス
+              %br/
+              %td= f.email_field :email, autofocus: true
+            %tr.field
+              %td= f.label :パスワード
+              %br/
+              %td= f.password_field :password, autocomplete: "new-password"
+              %td= f.password_field :password_confirmation, autocomplete: "new-password"
+              %br/
+              %h2 ※英字と数字の両方を含めて設定してください
+            %tr.field
+              %td= f.label :氏名（漢字）
+              %td 
+                姓
+                = f.text_field :first_name
+              %td 
+                名
+                = f.text_field :last_name
+            %tr.field
+              %td= f.label :氏名（フリガナ）
+              %td 
+                セイ
+                = f.text_field :first_name_kana
+              %td 
+                メイ
+                = f.text_field :last_name_kana
+            %tr.field
+              %td=f.label :年齢
+              %br/
+              %td= f.text_field :age
+              歳
+            %tr.field 
+              %td= f.label :性別
+              %label
+                %td= f.radio_button :gender,"男性"
+                男性
+              %label
+                %td= f.radio_button :gender,"女性"
+                女性
+            %tr.field 
+              %td= f.label "都道府県", class: "identification-content__prefecture"
+              %td= f.collection_select :prefecture, Prefecture.all, :id, :name, prompt: "選択してください"
+            %tr.field 
+              %td= f.label :キャリア状況
+              %label
+                %td= f.radio_button :carrier,"社会人"
+                社会人
+              %label
+                %td= f.radio_button :carrier,"学生"
+                学生
+              %label
+                %td= f.radio_button :carrier,"その他"
+                その他
+            %br/
+            %p  入力お疲れ様でした。下記の「登録の完了」ボタンをクリックして下さい。
+                
+
+          .actions
+            = f.submit "登録の完了", class: 'next-btn'
+  = render "layouts/footer"
