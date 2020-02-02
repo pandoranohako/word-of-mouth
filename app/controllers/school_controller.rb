@@ -15,8 +15,9 @@ class SchoolController < ApplicationController
   end
 
   def show
-    @post = Post.all
-    @school = School.find(params[:id])
+    @user = User.find(params[:id])
+  rescue ActiveRecord::RecordNotFound => e
+    redirect_to :root, alert: '口コミの投稿はありません'
   end
 
   def admission

@@ -1,3 +1,5 @@
+@import "config/color";
+@import "modules/flash";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import 'footer';
@@ -9,3 +11,4 @@
 @import "devise/new_registration";
 @import 'posts';
 @import "display_btn";
+@import 'users'

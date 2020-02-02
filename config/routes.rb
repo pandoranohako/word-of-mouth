@@ -25,4 +25,6 @@ Rails.application.routes.draw do
     end
   end
   resources :posts, only: [:index, :new, :create]
+  resources :users
+
 end
