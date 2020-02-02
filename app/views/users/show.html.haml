@@ -1,0 +1,34 @@
+.post-contents
+  - @post.each do |post|
+    -if @user.id == post.user_id
+      .user-contents
+        .post-contents__main--form
+          .post-contents__main--header
+            入校 
+          .post-contents__main--contents
+            = post.admission 
+        .post-contents__main--form    
+          .post-contents__main--header  
+            ギャップ
+          .post-contents__main--contents
+            = post.gap
+        .post-contents__main--form    
+          .post-contents__main--header
+            カリキュラムの質
+          .post-contents__main--contents
+            = post.curriculum_quality
+        .post-contents__main--form  
+          .post-contents__main--header 
+            金額 
+          .post-contents__main--contents
+            = post.cost
+        .post-contents__main--form  
+          .post-contents__main--header
+            カリキュラム外の学習    
+          .post-contents__main--contents
+            = post.out_of_learning
+        .post-contents__main--form
+          .post-contents__main--header
+            就職
+          .post-contents__main--contents
+            = post.employment
