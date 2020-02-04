@@ -51,7 +51,7 @@
                 女性
         %tr.field 
           %td.right= f.label"都道府県", class: "identification-content__prefecture"
-          %td= f.collection_select :prefecture, Prefecture.all, :id, :name, prompt: "選択してください"
+          %td= f.collection_select :prefecture_id, Prefecture.all, :id, :name, prompt: "選択してください"
         %tr.field 
           %td.right= f.label:キャリア状況      
           %td

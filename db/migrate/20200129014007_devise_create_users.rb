@@ -13,7 +13,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.2]
       t.string :gender, null:false
       t.string :carrier, null:false
       t.integer :age, null:false
-      t.string :prefecture, null:false
+      t.integer :prefecture_id, null:false
 
 
 
