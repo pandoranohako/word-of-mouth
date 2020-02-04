@@ -21,7 +21,7 @@
 |prefecture|string|null: false|
 
 ### Association
--has_many :posts
+- has_many :posts
 
 ## Schoolテーブル
 |Column|Type|Options|
@@ -29,7 +29,7 @@
 |school_name|string|null: false|
 
 ### Association
--has_many :posts
+- has_many :posts
 
 ## Inquiriesテーブル
 |Column|Type|Options|
@@ -53,5 +53,5 @@
 |school|references|foregin_key: true|
 
 ### Association
--belongs_to :user
--belongs_to :school
+- belongs_to :user
+- belongs_to :school
