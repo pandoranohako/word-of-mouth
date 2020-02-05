@@ -1,9 +1,9 @@
-#word-of-mouth
+# word-of-mouth
 エンジニア養成スクールの口コミを投稿、閲覧できるアプリケーションです。
 
-##Description
+## Description
 
-##Features
+## Features
 
 
 ## Usersテーブル
