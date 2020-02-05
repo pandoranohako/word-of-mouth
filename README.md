@@ -1,9 +1,19 @@
-# word-of-mouth
-エンジニア養成スクールの口コミを投稿、閲覧できるアプリケーションです。
+# 1.word-of-mouthの概要
+- プログラミングスクールの口コミサイトです。
 
-## Description
-っっっk
-## Features
+# 2.機能一覧
+- 記事投稿
+- ユーザー登録
+- スクール別表示
+- 回答者別一覧表示
+<img width="1440" alt="スクリーンショット 2020-02-05 20 26 59" src="https://user-images.githubusercontent.com/57931839/73838072-344bed80-4856-11ea-9a7e-c51cf2b62e42.png">
+
+- 8つの項目毎に一覧を表示
+<img width="1440" alt="スクリーンショット 2020-02-05 20 26 46" src="https://user-images.githubusercontent.com/57931839/73838117-475ebd80-4856-11ea-86c7-6f5c78561699.png">
+
+- お問い合わせ機能
+
+
 
 
 ## Usersテーブル
