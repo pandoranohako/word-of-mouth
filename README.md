@@ -21,7 +21,8 @@
 
 ## 4.DB設計
 ● ER図
-![word_of_mouth](https://user-images.githubusercontent.com/56438740/73907412-88ec7880-48e9-11ea-954a-8a1a47455d64.jpeg)
+[word of mouth.pdf](https://github.com/pandoranohako/word-of-mouth/files/4163441/word.of.mouth.pdf)
+
 
 ## Usersテーブル
 |Column|Type|Options|
