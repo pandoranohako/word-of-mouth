@@ -1,23 +1,23 @@
 # 1.word-of-mouthの概要
-● エンジニア養成スクールの口コミを投稿、閲覧できるアプリケーションです。
-● URL　http://52.69.45.22/
+● エンジニア養成スクールの口コミを投稿、閲覧できるアプリケーションです。 <br>
+● URL　http://52.69.45.22/ <br>
 ● 一人のユーザーが複数同じスクールに口コミを投稿するとビュー画面が崩れてしまうので、テスト用アカウントは特に設けていません。
 
 # 2.アプリケーション機能一覧
-● ユーザー登録（Emailアドレス、パスワード）
-● 口コミの投稿（編集、削除機能は実装していません）
-● ユーザー別投稿一覧ページ
-● 口コミの表題別一覧ページ
+● ユーザー登録（Emailアドレス、パスワード） <br>
+● 口コミの投稿（編集、削除機能は実装していません） <br>
+● ユーザー別投稿一覧ページ <br> 
+● 口コミの表題別一覧ページ <br>
 ● 
 
 # 3.使用技術
-● Visual Studio Code
-● MySQL
-● aws（capistranoを使用した自動デプロイ)
-● Ruby on Rails
-● Ruby
-● Scss
-● Haml
+● Visual Studio Code <br>
+● MySQL <br>
+● aws（capistranoを使用した自動デプロイ) <br>
+● Ruby on Rails <br>
+● Ruby <br>
+● Scss <br>
+● Haml <br>
 
 ## Usersテーブル
 |Column|Type|Options|
