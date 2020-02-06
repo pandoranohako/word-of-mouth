@@ -41,6 +41,7 @@
 
 ### Association
 - has_many :posts
+- has_many :inquiries
 
 ## Schoolテーブル
 |Column|Type|Options|
