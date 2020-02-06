@@ -21,8 +21,7 @@
 
 ## 4.DB設計
 ● ER図
-![word of mouth.pdf]
-(https://github.com/pandoranohako/word-of-mouth/files/4163441/word.of.mouth.pdf)
+<img width="1423" alt="スクリーンショット 2020-02-06 15 06 14" src="https://user-images.githubusercontent.com/56438740/73910365-7cb8e900-48f2-11ea-8592-5446ce2e09df.png">
 
 
 
