@@ -58,7 +58,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px 20px;
   &--item{
-  width: 320px;
+  width: 322px;
   border:1px solid #ccc;
   }
   &--text{
@@ -110,6 +110,7 @@
 }
 @media screen and(max-width: 559px ) {
   .fv__section {
+
     width:100%;
     height: auto;
     padding: 30px;
@@ -143,6 +144,7 @@
     font-size: 24px;
     font-weight: bold;
     color:greenyellow;
+
   }
 }
 

@@ -12,9 +12,13 @@
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 30px;
+  position: absolute;
 }
 .user-main_box_contents_field {
   margin-bottom: 30px;
+  margin-top: 10px;
+  position: relative;
+  top: 50px;
 }
 
 .login-btn {
@@ -24,6 +28,7 @@
   background-color: #1b7fbe;
   color: white;
   border-radius: 4px;
+  margin-top: 100px;
 }
 
 .login-btn:hover {
