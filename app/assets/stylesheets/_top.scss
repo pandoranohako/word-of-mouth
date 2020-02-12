@@ -108,9 +108,8 @@ body {
     padding-right: 10px;
   }
 }
-@media screen and(max-width: 559px ) {
+@media screen and(max-width: 559px) {
   .fv__section {
-
     width:100%;
     height: auto;
     padding: 30px;
@@ -124,10 +123,8 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-  
   .card__section--title {
     font-size: 20px;
-    // margin-right: 500px;
   }
   .card__list {
     grid-template-columns: repeat(1, 1fr);
@@ -143,7 +140,5 @@ body {
     font-size: 24px;
     font-weight: bold;
     color:greenyellow;
-
   }
 }
-
