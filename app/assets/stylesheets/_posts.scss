@@ -58,4 +58,31 @@
     margin: 50px auto;
   }
 }
-
+@media screen and (max-width: 959px) {
+  .header {
+    width: 770px;
+  }
+  .footer {
+    width: 770px;
+  }
+}
+@media screen and(max-width: 559px ) {
+  .post-contents__header{
+    position: relative;
+    font-size: 15px;
+  }
+  .post-contentns__header--title {
+    font-size: 200px;
+  }
+  .post-contents__header--image {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+  }
+  .post-contents__question--contents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 18px;
+  }
+}

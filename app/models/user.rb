@@ -12,5 +12,4 @@ class User < ApplicationRecord
   validates :email, :age, presence:true
   validates :password, presence: true, length: { in: 7..128}
   validates :first_name, :last_name, :first_name_kana, :last_name_kana, presence: true, length: { maximum: 35}
-
 end

@@ -76,3 +76,21 @@
   height: 300px;
   }
 }
+@media screen and (max-width: 959px) {
+
+}
+@media screen and(max-width: 559px) {
+  .inquiry {
+    overflow-x: hidden;
+  }
+  .inquiry__contents--title {
+    width: 376px;
+    margin-top: 50px;
+  }
+  .inquiry__contents--name {
+    margin: 70px 100px 0 0;
+  }
+  .input-box__message {
+    width: 360px;
+  }
+}
