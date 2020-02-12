@@ -28,21 +28,51 @@ a{
     }
   }
 }
-@media screen and (max-width: 959px) {
-  .header {
-    width: 956px;
-  }
-}
-@media screen and(max-width: 559px ) {
-  .header {
-    width: 378px!important;
-  }
+// @media screen and (max-width: 959px) {
+//   .header {
+//     width: 956px;
+//   }
+// }
+@media screen and (max-width: 559px ) {
+  // .header {
+  //   width: 378px!important;
+  // }
   
-  .header__title--text {
-    font-size: 10px;
-  }
-  .header__right--btn {
-    font-size: 13px;
-    margin:25px 40px 0 20px;
+  // .header__title--text {
+  //   font-size: 10px;
+  // }
+  // .header__right{
+  // }
+  // .header__right--btn {
+  //   font-size: 13px;
+  //   margin:25px 10px 0 0;
+  // }
+  .header{
+    height: 80px;
+    width: 100%;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    z-index:1;
+    &__right--btn{
+      height:100%;
+      display:flex;
+      margin:25px 10px 0 0;
+      a{
+        margin-left:20px;
+        color:white;
+        font-size:13px;
+      }
+    }
+    &__title{
+      font-size: 15px;
+      line-height: 60px;
+    &--text{
+      text-decoration: none;
+      color:white;
+      margin-left:5px;
+      font-weight:bold;
+      }
+    }
   }
 }

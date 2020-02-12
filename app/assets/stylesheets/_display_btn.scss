@@ -23,3 +23,31 @@
     color: white;
   }
 }
+
+@media screen and(max-width: 559px ) {
+  .display-link {
+    position: fixed;
+    z-index: 10;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding: 25px 48px -1px 0; 
+    text-decoration: none;
+    background-color:#cccc;
+    margin: 0 0 40px 0;
+  
+    &__text {
+      text-align: center;
+      color: black;
+      font-size: 22px;
+      font-family: arial;
+      padding: 10px;
+    }
+  
+    &__icon {
+      color: black;
+    }
+  }
+  
+}
