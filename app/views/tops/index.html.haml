@@ -1,19 +1,20 @@
 =render 'layouts/notifications'
-.fv__section
-  .text__container
-  .main__copy 
-    プログラミングスクール選びを迷っているあなたに
-  .fv__text 
-    スクール受講生の生の声を
-  .cat__btn
-.card__section
-  .card__section--title
-    スクール別口コミ
-  .card__list
-    - @school.each do |school|
-      .card__list--item
-        .card__list--img
-          =link_to image_tag(school.image.url, alt: 'スクール画像', width: '320px', height: '175px', class: "card__image"), school_path(school.id)
-          = school.company
-        .card__list--text
-          = school.school_name
+.container
+  .fv__section
+    .text__container
+    .main__copy 
+      プログラミングスクール選びを迷っているあなたに
+    .fv__text 
+      スクール受講生の生の声を
+    .cat__btn
+  .card__section
+    .card__section--title
+      スクール別口コミ
+    .card__list
+      - @school.each do |school|
+        .card__list--item
+          .card__list--img
+            =link_to image_tag(school.image.url, alt: 'スクール画像', width: '320px', height: '175px', class: "card__image"), school_path(school.id)
+            = school.company
+          .card__list--text
+            = school.school_name

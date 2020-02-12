@@ -84,11 +84,11 @@
     width: 770px;
   }
   .card__section {
-    width: 700px;
+    width: 100%;
   }
   .card__section--title {
     font-size: 40px;
-    margin-right: 280px;
+    // margin-right: 280px;
   }
   .card__list {
     display: grid;
@@ -110,15 +110,27 @@
 }
 @media screen and(max-width: 559px ) {
   .fv__section {
-    width: 378px;
+    width:100%;
+    height: auto;
+    padding: 30px;
+    background-image: image-url('bc.png');
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+  
   .card__section--title {
     font-size: 20px;
-    margin-right: 500px;
+    // margin-right: 500px;
   }
   .card__list {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 25px;
+    margin:0 35px;
   }
   .card__list--img {
     font-size: 10px;
@@ -126,6 +138,11 @@
   .card__image {
     width: 298px;
     height: 100px;
+  }
+  .main__copy {
+    font-size: 24px;
+    font-weight: bold;
+    color:greenyellow;
   }
 }
 
