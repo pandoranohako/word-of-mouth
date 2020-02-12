@@ -28,3 +28,21 @@ a{
     }
   }
 }
+@media screen and (max-width: 959px) {
+  .header {
+    width: 956px;
+  }
+}
+@media screen and(max-width: 559px ) {
+  .header {
+    width: 378px!important;
+  }
+  
+  .header__title--text {
+    font-size: 10px;
+  }
+  .header__right--btn {
+    font-size: 13px;
+    margin:25px 40px 0 20px;
+  }
+}

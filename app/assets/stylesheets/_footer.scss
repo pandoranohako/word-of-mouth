@@ -16,3 +16,19 @@
 .footer__text{
   color:white;
 }
+
+@media screen and (max-width: 959px) {
+  .footer {
+    width: 956px;
+  }
+}
+@media screen and(max-width: 559px ) {
+  .footer {
+    width: 378px!important;
+    margin-top: 671px;
+  }
+  .footer__contents--list {
+    font-size: 12px;
+  
+  }
+}

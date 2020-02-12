@@ -75,4 +75,25 @@
     }
   }
 }
+@media screen and (max-width: 959px) {
 
+}
+@media screen and(max-width: 559px) {
+  .new-post-main {
+    width: 350px;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .new-post-main__center {
+    width: 350px;
+  }
+  .new-post-main__center__head {
+    width: 250px;
+  }
+  .new-post-main__center__bottom__submit-btn {
+
+  }
+  .new-post-main__center__bottom__back-btn {
+    margin: 10px auto;
+  }
+}

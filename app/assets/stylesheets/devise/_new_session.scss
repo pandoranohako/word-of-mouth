@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+.user-main_box {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 0 190px;
+  padding-top: 140px;
+  margin-bottom: 200px;
+}
+.user-main_box_contents {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.user-main_box_contents_field {
+  margin-bottom: 30px;
+}
+
+.login-btn {
+  width: 150px;
+  height: 50px; 
+  cursor: pointer;
+  background-color: #1b7fbe;
+  color: white;
+  border-radius: 4px;
+}
+
+.login-btn:hover {
+  background-color: pink;
+}
+
+@media (max-width: 559px ) {
+
+  .user-main_box_contents{
+    margin-bottom: 185px;
+  }
+  .login-btn {
+    margin-top: 345px;
+  }
+
+}
+ 
