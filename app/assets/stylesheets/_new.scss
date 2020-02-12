@@ -5,7 +5,7 @@
   overflow:scroll;
   &__center {
     width: 700px;
-    height: 100vh;
+    // height: 100vh;
     margin: auto;
 
     &__head {
@@ -85,8 +85,7 @@
     overflow-x: hidden;
   }
   .new-post-main__center {
-    width: 350px;
-    position: absolute;
+    width: 100%;
   }
   .new-post-main__center__head {
     width: 250px;
