@@ -86,14 +86,18 @@
   }
   .new-post-main__center {
     width: 350px;
+    position: absolute;
   }
   .new-post-main__center__head {
     width: 250px;
-  }
-  .new-post-main__center__bottom__submit-btn {
-
+    margin: 100px;
+    position: relative;
+    right: 40px;
   }
   .new-post-main__center__bottom__back-btn {
     margin: 10px auto;
+  }
+  .footer {
+    margin-top: 2800px;
   }
 }
