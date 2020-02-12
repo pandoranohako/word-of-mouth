@@ -67,6 +67,12 @@
   }
 }
 @media screen and(max-width: 559px ) {
+  .post-contents {
+    overflow-x: hidden;
+  }
+  .post-contents__user {
+    width: 100%;
+  }
   .post-contents__header{
     position: relative;
     font-size: 15px;
@@ -84,5 +90,14 @@
     flex-direction: column;
     margin-top: 100px;
     margin-left: 18px;
+  }
+  .post-contents__main--form {
+    width: 360px;
+    margin-left: 10px;
+  }
+  .post-contents__main--header {
+    width:300px;
+    margin-left: 50px;
+    overflow-x: hidden;
   }
 }

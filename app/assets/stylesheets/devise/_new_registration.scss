@@ -60,7 +60,7 @@ cursor: pointer;
 
 @media screen and(max-width: 559px ) {
   table {
-    width: 150px;
+    width: 10px;
   }
   .button {
     width: 300px;
@@ -68,5 +68,8 @@ cursor: pointer;
   }
   .next-btn {
     margin-left: 35px;
+  }
+  .field {
+    width: 3000px;
   }
 }

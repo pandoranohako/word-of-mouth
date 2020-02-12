@@ -111,6 +111,7 @@
 @media screen and(max-width: 559px ) {
   .fv__section {
     width: 378px;
+    height: 300px;
   }
   .card__section--title {
     font-size: 20px;
@@ -126,6 +127,12 @@
   .card__image {
     width: 298px;
     height: 100px;
+  }
+  .main__copy {
+    margin-bottom: 10px;
+  }
+  .fv__text {
+    margin-bottom: 50px;
   }
 }
 
