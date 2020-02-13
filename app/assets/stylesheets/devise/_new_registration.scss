@@ -1,7 +1,5 @@
 .new-user-main__box {
-  margin: 0 auto;
-  padding: 0 0 190px;
-  padding-top: 140px;
+  margin: 50px 200px;
 }
 .new-user-main__box__title {
   font-size: 20px;
@@ -57,8 +55,17 @@ cursor: pointer;
 }
 
 @media screen and(max-width: 559px ) {
+  input{
+    border:1px solid black;
+  }
+
   table {
-    width: 10px;
+    width: 100%;
+  }
+  .right{
+    padding:5px;
+    // font-size:10px;
+    display: block;
   }
   .button {
     width: 300px;
@@ -68,6 +75,9 @@ cursor: pointer;
     margin-left: 35px;
   }
   .field {
-    width: 3000px;
+    width: 100%;
+  }
+  .new-user-main__box {
+    margin:0 0 10px;
   }
 }
