@@ -15,6 +15,7 @@
   }
   &__question{
     width: 690px;
+    height: 400px;
     margin:0 auto;
     &--list{
     margin: 5px 5px 0 0;
@@ -57,7 +58,7 @@
   }
   &__user{
     width: 690px;
-    height: 100vh;
+    // height: 100vh;
     margin: 50px auto;
   }
 }
