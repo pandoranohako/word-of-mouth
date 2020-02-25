@@ -21,7 +21,7 @@
 
 ## 4.DB設計
 ● ER図
-<img width="1423" alt="スクリーンショット 2020-02-06 15 06 14" src="https://user-images.githubusercontent.com/56438740/73910365-7cb8e900-48f2-11ea-8592-5446ce2e09df.png">
+<img width="953" alt="スクリーンショット 2020-02-25 12 11 19" src="https://user-images.githubusercontent.com/57927366/75214454-ff85e300-57d0-11ea-9f0a-d0b65ff6cf8b.png">
 
 
 
